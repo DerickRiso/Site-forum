@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: darksouls ;
+    src: url(./fontes/OptimusPrinceps.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: #262625;
+    --cor2: #1A0E08;
+    --cor3: #BFB7A8;
+    --cor4: #4F4432;
+    --cor5: #0D0D0D;
+    --cor6: #D9D0C1;
+}
+
+body {
+    background-color: var(--cor5);
+    font-family: 'Merriweather', 'Times New Roman', Times, serif;
+}
+
+header {
+    padding: 0px;
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+}
+
+header > p {
+    color: white;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    text-shadow: 0px 0px 10px var(--cor4);
+}
+
+header > h1 {
+    color: var(--cor5);
+    margin: auto;
+    max-width: 600px;
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 2.3em;
+    text-shadow: 0px 0px 5px var(--cor3);
+    font-family: 'darksouls';
+}
+
+nav {
+    padding: 30px;
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+
+nav a {
+    font-family: 'Merriweather';
+    font-size: 0.9em;
+    text-decoration: none;
+    color: var(--cor3);
+    margin-left: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition-duration: 0.7s;
+}
+
+nav a:hover{
+    background-color: var(--cor4);
+    color: var(--cor2);
+}
+
+main {
+    background-color: var(--cor6);
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main img {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    outline: solid 2px var(--cor1);
+    cursor: pointer;
+}
+
+section {
+    padding: 10px 30px;
+}
+
+section > h2 {
+    padding-bottom: 20px; 
+}
+
+section > p {
+    text-align: justify;
+}
+
+div.video {
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--cor3);
+    position: relative;
+    max-width: 300px;
+    height: 100px;
+    padding: 150px 200px;
+    outline: 1px solid var(--cor1);
+}
+
+div.video > iframe {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    right: 5%;
+    bottom: 5%;
+}
+
+aside {
+    color: var(--cor6);
+    background-color: var(--cor4);
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+aside > h2 {
+    background-color: var(--cor1);
+    margin: -10px -20px 10px -20px;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+footer {
+    color: var(--cor6);
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 0.8em;
+}
